@@ -80,11 +80,6 @@ resource "aws_lb" "website" {
 resource "aws_ecs_cluster" "main" {
 
  name = "student-cluster"
-}
-
-resource "aws_security_group" "web_alb" {
-  name   = "web-sg"
-  vpc_id = aws_vpc.main.id
 
   ingress {
     from_port   = 80
