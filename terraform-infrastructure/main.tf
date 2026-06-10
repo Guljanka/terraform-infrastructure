@@ -82,7 +82,7 @@ resource "aws_ecs_cluster" "main" {
  name = "student-cluster"
 }
 
-resource "aws_security_group" "web" {
+resource "aws_security_group" "web_alb" {
   name   = "web-sg"
   vpc_id = aws_vpc.main.id
 
