@@ -17,7 +17,9 @@ jobs:
       - name: Terraform Init
         working-directory: terraform-infrastructure
         run: terraform init
+        working-directory: terraform-infrastructure
 
       - name: Terraform Plan
         working-directory: terraform-infrastructure
         run: terraform plan
+        working-directory: terraform-infrastructure
